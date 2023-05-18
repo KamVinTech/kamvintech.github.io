@@ -1,6 +1,6 @@
 /* Body Styles */
 body {
-    background-color: #F0D9D9; /* Pastel pink */
+     /* Pastel pink */
     margin: 0;
     padding: 0;
   }
@@ -30,7 +30,7 @@ section {
     height: 100vh; /* Set height to 100% of viewport height */
     width: 100vw; /* Set width to 100% of viewport width */
   }
-  
+
   /* Footer Styles */
   footer {
     background-color: black;
