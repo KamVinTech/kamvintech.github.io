@@ -12,11 +12,9 @@ body {
     text-align: center;
   }
 
-  .logo {
-    align-items: left;
-    position: relative;
-    width: 30%;
-    height: 60%;
+  header .logo {
+    float: left;
+    max-width: 100%;
 
   }
   
