@@ -11,6 +11,14 @@ body {
     padding: 20px;
     text-align: center;
   }
+
+  .logo {
+    align-items: left;
+    position: relative;
+    width: 30%;
+    height: 60%;
+
+  }
   
   /* Footer Styles */
   footer {
