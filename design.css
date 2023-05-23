@@ -22,12 +22,13 @@ header img.logo {
 
 /* Parallax Styles */
 .parallax {
-  background: linear-gradient(to bottom right, #FAD7A1, #FFAAAA);
+  background: linear-gradient(to bottom right, #5799ef, #FFAAAA);
   height: 100vh; /* Set height to 100% of viewport height */
   width: 100vw; /* Set width to 100% of viewport width */
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 /* Section Content Styles */
@@ -35,6 +36,14 @@ header img.logo {
   text-align: right;
   padding-right: 20px;
   color: white;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.parallax.loaded .content {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .parallax h1 {
