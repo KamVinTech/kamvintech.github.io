@@ -70,7 +70,8 @@ header img.logo {
 /* Section Styles */
 section {
   padding: 50px;
-  text-align: center;
+  font-size: large;
+  text-align: right;
   height: 100vh; /* Set height to 100% of viewport height */
   width: 100vw; /* Set width to 100% of viewport width */
 }
@@ -80,5 +81,5 @@ footer {
   background-color: black;
   color: white;
   padding: 20px;
-  text-align: center;
+  text-align: left;
 }
