@@ -1,41 +1,75 @@
+/* CSS File */
+
+/* Body Styles */
 body {
-    background-color: #F0D9D9; /* Pastel pink */
-    margin: 0;
-    padding: 0;
+  background-color: #F0D9D9; /* Pastel pink */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #C2E0FF; /* Pastel blue */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Logo Styles */
+header img.logo {
+  float: left;
+  max-width: 100%;
+}
+
+/* Parallax Styles */
+.parallax {
+  background: linear-gradient(to bottom right, #FAD7A1, #FFAAAA);
+  height: 100vh; /* Set height to 100% of viewport height */
+  width: 100vw; /* Set width to 100% of viewport width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section Content Styles */
+.parallax .content {
+  text-align: right;
+  padding-right: 20px;
+  color: white;
+}
+
+.parallax h1 {
+  font-size: 30px;
+}
+
+/* Neon Animation Styles */
+.neon-animation {
+  width: 200px;
+  height: 200px;
+  background-color: #00FF00; /* Neon green */
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+  from {
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00, 0 0 60px #00FF00, 0 0 70px #00FF00;
   }
-  
-  /* Header Styles */
-  header {
-    background-color: #C2E0FF; /* Pastel blue */
-    padding: 20px;
-    text-align: center;
+  to {
+    box-shadow: 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00, 0 0 60px #00FF00, 0 0 70px #00FF00, 0 0 80px #00FF00;
   }
-  
-  /* Logo Styles */
-  header img.logo {
-    float: left;
-    max-width: 100%;
-  }
-  
-  /* Parallax Styles */
-  .parallax {
-    background: radial-gradient(circle, rgba(34,17,244,1) 0%, rgba(0,0,0,1) 29%, rgba(38,189,155,1) 36%, rgba(0,255,10,1) 51%, rgba(143,56,175,1) 70%, rgba(0,0,0,1) 80%, rgba(0,0,0,1) 95%);
-    height: 100vh; /* Set height to 100% of viewport height */
-    width: 100vw; /* Set width to 100% of viewport width */
-  }
-  
-  /* Section Styles */
-  section {
-    padding: 50px;
-    text-align: center;
-    height: 100vh; /* Set height to 100% of viewport height */
-    width: 100vw; /* Set width to 100% of viewport width */
-  }
-  
-  /* Footer Styles */
-  footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
+}
+
+/* Section Styles */
+section {
+  padding: 50px;
+  text-align: center;
+  height: 100vh; /* Set height to 100% of viewport height */
+  width: 100vw; /* Set width to 100% of viewport width */
+}
+
+/* Footer Styles */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
