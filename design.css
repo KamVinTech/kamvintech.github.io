@@ -1,85 +1,177 @@
 /* CSS File */
 
-/* Body Styles */
-body {
-  background-color: #F0D9D9; /* Pastel pink */
+/* Reset Styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  /*font-family: 'Raleway', sans-serif; */
+  font-family: 'Raleway', sans-serif;;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+h1{
+
+  font-size:45px;
+  font-weight: bold;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
 }
 
 /* Header Styles */
 header {
-  background-color: #C2E0FF; /* Pastel blue */
+  background-color: #333;
   padding: 20px;
-  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul {
+  list-style-type: none;
 }
 
-/* Logo Styles */
-header img.logo {
-  float: left;
-  max-width: 100%;
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+  padding: 20px;
+}
+nav ul li:first-child {
+  margin-left: 0; /* Remove margin-left from the first menu item */
 }
 
-/* Parallax Styles */
-.parallax {
-  background: linear-gradient(to bottom right, #5799ef, #FFAAAA);
-  height: 100vh; /* Set height to 100% of viewport height */
-  width: 100vw; /* Set width to 100% of viewport width */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Hero Section Styles */
+#hero {
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
-/* Section Content Styles */
-.parallax .content {
-  text-align: right;
-  padding-right: 20px;
-  color: white;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+.hero-content {
+  text-align: center;
+  color: #221616;
 }
 
-.parallax.loaded .content {
-  opacity: 1;
-  transform: translateY(0);
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
-.parallax h1 {
-  font-size: 30px;
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
-/* Neon Animation Styles */
-.neon-animation {
-  width: 200px;
-  height: 200px;
-  background-color: #00FF00; /* Neon green */
-  animation: neon-glow 1.5s ease-in-out infinite alternate;
+/* About Section Styles */
+#about {
+  background-color: #f7f7f7;
+  padding: 80px 0;
 }
 
-@keyframes neon-glow {
-  from {
-    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00, 0 0 60px #00FF00, 0 0 70px #00FF00;
-  }
-  to {
-    box-shadow: 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00, 0 0 60px #00FF00, 0 0 70px #00FF00, 0 0 80px #00FF00;
-  }
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-/* Section Styles */
-section {
-  padding: 50px;
-  font-size: large;
-  text-align: right;
-  height: 100vh; /* Set height to 100% of viewport height */
-  width: 100vw; /* Set width to 100% of viewport width */
+/* Features Section Styles */
+#features {
+  padding: 80px 0;
+}
+
+.feature {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature i {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Pricing Section Styles */
+#pricing {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+}
+
+.pricing-card {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pricing-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pricing-card p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+  margin-bottom: 10px;
+}
+
+/* Contact Section Styles */
+#contact {
+  padding: 80px 0;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 /* Footer Styles */
 footer {
-  background-color: black;
-  color: white;
+  background-color: #333;
+  color: #fff;
   padding: 20px;
-  text-align: left;
+  text-align: center;
 }

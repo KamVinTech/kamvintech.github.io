@@ -1,8 +1,15 @@
+// Add smooth scrolling to anchor links
 document.addEventListener("DOMContentLoaded", function() {
-    var parallaxSections = document.getElementsByClassName("parallax");
-    for (var i = 0; i < parallaxSections.length; i++) {
-      var section = parallaxSections[i];
-      section.classList.add("loaded");
+    var anchorLinks = document.querySelectorAll('a[href^="#"]');
+    for (var i = 0; i < anchorLinks.length; i++) {
+      anchorLinks[i].addEventListener("click", function(e) {
+        e.preventDefault();
+        var target = this.getAttribute("href");
+        var targetElement = document.querySelector(target);
+        targetElement.scrollIntoView({
+          behavior: "smooth"
+        });
+      });
     }
   });
   
