@@ -20,6 +20,7 @@ h1{
 
   font-size: 70px;
   font-weight: bold;
+  text-align: right;
 
 }
 
@@ -83,23 +84,30 @@ nav ul li a {
 }
 
 .hero-content {
-  text-align: center;
+  text-align: right;
   color: white;
+  padding-right: 2em;
 }
 
 .hero-content h1 {
-  font-size: 48px;
+  font-size: 120px;
   margin-bottom: 20px;
+
 }
 
 .hero-content p {
-  font-size: 24px;
+  font-size: 60px;
   margin-bottom: 30px;
+}
+
+.hero-content a{
+  color: white;
 }
 
 /* About Section Styles */
 #about {
-  background-color: black;
+  background-color: white;
+  color: black;
   padding: 80px 0;
 }
 
@@ -116,6 +124,11 @@ nav ul li a {
 .feature {
   text-align: center;
   margin-bottom: 40px;
+  box-sizing: border-box;
+  float:left;
+  width: 33%;
+  padding: 0 15px;
+  
 }
 
 .feature i {
@@ -130,8 +143,10 @@ nav ul li a {
 
 /* Contact Section Styles */
 #contact {
+  background-color: white;
+  color: black;
   padding: 50 0;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 #contact h2 {
@@ -157,8 +172,8 @@ form input[type="submit"] {
 
 /* Footer Styles */
 footer {
-  background-color:white;
-  color:black;
+  background-color:black;
+  color:white;
   padding: 5px;
   text-align: center;
 }
