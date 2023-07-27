@@ -46,6 +46,7 @@ nav ul li:first-child {
 nav ul li a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 /* Logo styling */
@@ -55,7 +56,7 @@ nav ul li a {
 
 }
 .logo img {
-  max-width: 30%;
+  max-width: 20%;
   height: auto;
 }
 
@@ -64,35 +65,44 @@ section{
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 100vh;
+  min-height: 80vh;
   align-items: center;
 }
 
 h1{
   font-size: 70px;
   font-weight:bold;
+
 }
 
 h3{
   padding: 3px;
   margin: 30px;
-  place-content: center;
 }
 
 ul img{
   max-width: 100px;
-  max-height: 100px;
+  max-height: 120px;
 
 }
  .container ul li{
 
   float: left;
   place-content: center;
-  margin: 50px;
-  list-style-type:none;;
+  margin: 45px;
+  list-style-type:none;
+  white-space: nowrap;
  }
 
-.Footer p{
+ .container h3{
+  display:grid; 
+  place-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 26px;
+  opacity: 0.75;
+ }
 
+.Footer {
 text-align: center;
 }
